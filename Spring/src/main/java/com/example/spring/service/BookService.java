@@ -16,4 +16,10 @@ public class BookService {
     public Book getBook(String isbn) {
         return bookMapper.toBook(bookRepository.findByIsbn(isbn));
     }
+
+    private void breakingMethod() {
+        /**
+         * This method breaks the service
+         */
+    }
 }
